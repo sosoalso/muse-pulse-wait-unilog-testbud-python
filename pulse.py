@@ -20,7 +20,6 @@ class pulse:
     def pulse_thread(self):
         time.sleep(self.duration)
         self.off_method()
-        self.active = False
         print("Relay is now off")
 
 
