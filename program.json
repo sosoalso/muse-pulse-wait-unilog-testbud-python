@@ -1,0 +1,10 @@
+{
+  "id": "muse_pulse_wait_testbud_python",
+  "name": "muse_pulse_wait_testbud_python",
+  "description": "description",
+  "disabled": false,
+  "provider": "python",
+  "scope": "",
+  "script": "index.py",
+  "envvars": {}
+}
