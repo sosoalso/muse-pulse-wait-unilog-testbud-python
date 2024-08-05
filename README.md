@@ -37,7 +37,7 @@ my_waiter = wait("my_waiter", allow_multiple_execution=False)
 
     def wait_example(e):
         if e.newValue:
-            global my_waiter
+            global my_waiter
             # 실행하기 전에 리스트 추가하면 됨
             my_waiter.wait(5.0, relay_on)  # 5초
             my_waiter.wait(10.0, relay_off) # 10초
