@@ -3,6 +3,34 @@
 asyncio 로 좀 더 단순하게 구현하려고 함.. 고민중
 
 
+일단 asyncio 태스크를 리스트업해놓고
+도중에 .cancel() 은 가능하니까
+엄청 간단한 클래스로 대체하며 될 거 같구
+pulse 야 그냥
+
+```
+def relay_on():
+    print("Relay ON")
+
+
+def relay_off():
+    print("Relay OFF")
+
+
+async def pulse_button():
+    relay_on()
+    await asyncio.sleep(3)
+    relay_off()
+
+def handle_pulse_button(evt):
+    if evt.value: 
+        asyncio.run(pulse_button())
+
+```
+이렇게 간단하게 정리하는게 나을듯
+
+
+
 ## PULSE
 pulse 는 데코레이터로 클래스 호출해서 쓰레드 하나 열어서 돌리기..
 
