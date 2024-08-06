@@ -8,7 +8,7 @@ asyncio 로 좀 더 단순하게 구현하려고 함.. 고민중
 엄청 간단한 클래스로 대체하며 될 거 같구
 pulse 야 그냥
 
-```
+```python
 def relay_on():
     print("Relay ON")
 
